@@ -1,0 +1,50 @@
+.nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #f9f9fa;
+    padding: 20px 50px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(121, 121, 121, 0.3);
+}
+.nav__list {
+    display: flex;
+    justify-content: space-between;
+}
+.nav__link {
+    position: relative;
+    color: #302943;
+}
+.nav__btn {
+    position: relative;
+}
+.nav__btn .fa-user {
+    position: relative;
+    font-size: 1.8em;
+    top: 20%;
+}
+.nav__btn .fa-hat-wizard {
+    position: absolute;
+    font-size: 1.5em;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.nav__notification {
+    position: absolute;
+    left: 17px;
+    bottom: 17px;
+    animation: notificationAnimation 0.5s ease-in-out 3;
+}
+@keyframes notificationAnimation {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.15);
+      background-color: rgb(215, 57, 57);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
