@@ -5,6 +5,9 @@
 .user-component:last-child {
     margin-bottom: 0;
 }
+a .user-component {
+    margin-bottom: 25px !important;
+}
 .user-component,
 .user-component__column:first-child {
     display: flex;

@@ -35,7 +35,7 @@
     justify-content: center;
     align-items: center;
     font-size: 132px;
-    animation: hideSplashScreen 0.3s ease-in-out forwards;
+    animation: hideSplashScreen 0.5s ease-in-out forwards;
     animation-delay: 1s;
 }
 @keyframes hideSplashScreen {
@@ -48,5 +48,29 @@
     100% {
         opacity: 0;  
         visibility: hidden;
+    }
+}
+#splash-screen .tiana {
+    position: absolute;
+    bottom: -100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70vw;
+    height: 70vw;
+    background-image: url(../../img/Tiana.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    animation: hideTiana 1.5s ease-in-out forwards;
+}
+@keyframes hideTiana {
+    0% {
+        bottom: -100%;
+    }
+    30% {
+        bottom: 0;  
+    }
+    100% {
+        bottom: -10%;  
     }
 }

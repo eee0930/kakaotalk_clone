@@ -1,13 +1,19 @@
 #chat-screen {
     background-color: #d5cded;
-    height: 500vh;
+    height: 300vh;
+}
+#chat-screen.ten {
+    background-image: url(../../img/ten_back.jpg);
+    background-position: center 0%;
+    background-size: auto 95vh;
+    background-attachment: fixed;
 }
 #chat-screen .alt-header,
 #chat-screen .status-bar {
     top: 0;
     position: fixed;
     width: 100%;
-    background-color: #d5cded;
+    background-color: #d5cded87;
     box-sizing: border-box;
 }
 #chat-screen .status-bar {
@@ -28,7 +34,7 @@
     }
   }
 .main-chat {
-    margin-top: 180px;
+    margin-top: 150px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -157,7 +163,7 @@
 }
 
 .reply:focus-within input {
-  width: 98vw;
+  width: 95vw;
   transform: translateX(-13%) translateY(-80px);
 }
 
